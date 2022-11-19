@@ -14,7 +14,7 @@ submit.addEventListener("click", (e) => {
             ${todoTitle.value}
         </span>
         <span id="btn-container">
-            <span class="clear btn">x</span>
+            <i class="fa-solid fa-circle-xmark clear btn"></i>
         </span>
     </div>`
     
@@ -25,7 +25,6 @@ output.addEventListener("click", e => {
 
     if(classList){
         if(confirm(`Do you wanna delete :: ${e.target.parentNode.parentNode.innerText.toUpperCase()} ::`)){
-            // e.target.parentNode.remove();
             e.target.parentNode.parentNode.remove()
         }
     }
